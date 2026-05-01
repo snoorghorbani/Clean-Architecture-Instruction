@@ -12,4 +12,20 @@ Copilot instruction files for enforcing [Clean Architecture (Robert C. Martin)](
 
 ## Usage
 
-Copy the `.github/instructions/` folder into the root of any project. Copilot picks up the instruction files automatically — no extra configuration needed.
+Install the package in your destination project and run the CLI command:
+
+```bash
+npm install --save-dev clean-architecture-instruction
+npx clean-architecture-instruction prepare .
+```
+
+This creates (or updates) `.github/instructions/` in the destination project root.
+
+### Command
+
+```bash
+clean-architecture-instruction prepare [targetPath] [--force]
+```
+
+- `targetPath`: optional path to the destination project (defaults to current directory).
+- `--force`: overwrite existing instruction files instead of skipping them.

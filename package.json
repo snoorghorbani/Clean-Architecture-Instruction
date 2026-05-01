@@ -1,0 +1,23 @@
+{
+    "name": "clean-architecture-instruction",
+    "version": "1.0.0",
+    "description": "Reusable Copilot instruction set for enforcing Clean Architecture in any project.",
+    "bin": {
+        "clean-architecture-instruction": "bin/clean-architecture-instruction.js"
+    },
+    "files": [
+        "bin",
+        ".github/instructions",
+        "README.md"
+    ],
+    "scripts": {
+        "prepare:project": "clean-architecture-instruction prepare ."
+    },
+    "keywords": [
+        "copilot",
+        "instructions",
+        "clean-architecture",
+        "developer-experience"
+    ],
+    "license": "MIT"
+}
